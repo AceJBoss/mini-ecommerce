@@ -33,4 +33,21 @@ class ProductServiceImpl : ProductService {
         TODO("Not yet implemented")
         return productRepository.findAll()
     }
+
+    override fun findByName(name: String?): List<Product?>? {
+        TODO("Not yet implemented")
+        return productRepository.findByName(name)
+    }
+
+    override fun findByNameContaining(name: String?): List<Product?>? {
+        TODO("Not yet implemented")
+        return productRepository.findByNameContaining(name)
+    }
+
+    override fun findByManufacturerAndCategory(manufacturer: String?, category: String?): List<Product?>? {
+        TODO("Not yet implemented")
+        return productRepository.findByManufacturerAndCategory(manufacturer,category)
+    }
+
+
 }
