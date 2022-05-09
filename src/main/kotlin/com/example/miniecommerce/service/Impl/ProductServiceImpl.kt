@@ -24,28 +24,23 @@ class ProductServiceImpl : ProductService {
         productRepository.saveAll(productList)
     }
     override fun createProduct(product: Product): String {
-        TODO("Not yet implemented")
         productRepository.save(product)
         return "Product Saved Successfully"
     }
 
-    override fun getProducts(): Iterable<Product> {
-        TODO("Not yet implemented")
-        return productRepository.findAll()
+    override fun getProducts(): List<Product> {
+        return productRepository.findAll().toList()
     }
 
     override fun findByName(name: String?): List<Product?>? {
-        TODO("Not yet implemented")
         return productRepository.findByName(name)
     }
 
     override fun findByNameContaining(name: String?): List<Product?>? {
-        TODO("Not yet implemented")
         return productRepository.findByNameContaining(name)
     }
 
     override fun findByManufacturerAndCategory(manufacturer: String?, category: String?): List<Product?>? {
-        TODO("Not yet implemented")
         return productRepository.findByManufacturerAndCategory(manufacturer,category)
     }
 
