@@ -16,10 +16,10 @@ class ProductServiceImpl : ProductService {
     @PostConstruct
     fun initDB(){
         val productList : List<Product> = listOf(
-            Product(100, "Laptop", "Just Laptop", 35000.0, 4.5, "Technology", "Dell"),
-            Product(101, "Mouse", "Just Mouse", 5000.0, 3.5, "Technology", "Hp"),
-            Product(102, "iPhone", "Just iPhone", 90000.0, 4.7, "Technology","Apple"),
-            Product(103, "Bag", "Just Bag", 12000.0, 4.2, "Household","Gucci")
+            Product(100, "Laptop", "Grey Laptop", 35000.0, 4.5, "Technology", "Dell"),
+            Product(101, "Mouse", "White Mouse", 5000.0, 3.5, "Technology", "Hp"),
+            Product(102, "iPhone", "Gold iPhone", 90000.0, 4.7, "Technology","Apple"),
+            Product(103, "Bag", "Black Bag", 12000.0, 4.2, "Household","Gucci")
         )
         productRepository.saveAll(productList)
     }
